@@ -1,0 +1,538 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+  <title>Web Development Studio</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .get-Started-btn {
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 15px;
+
+  }
+
+  .first-heading {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 10vh;
+    letter-spacing: 0.1px;
+  }
+
+  .bold-heading {
+    font-weight: bolder;
+  }
+
+  .bg-text-img {
+    background-image: url("Images/pic-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 100%;
+    height: 75vh;
+
+  }
+
+  .card-content {
+    width: 35%;
+    padding: 55px 20px;
+    border: none;
+    top: 35%;
+  }
+
+  .our-features-text {
+    font-size: 10vh;
+    font-weight: bolder;
+  }
+
+  .tools-part {
+    background-color: hwb(0 11% 88% / 0.996);
+    color: white;
+    font-size: large;
+    padding: 50px 0px;
+  }
+
+  .zero-1{
+    width: 150px;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 0px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    
+  }
+  .zero-2 {
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-left: 35%;
+
+  }
+  
+  .heading-text {
+    font-size: 3rem;
+    font-family: cursive;
+  }
+
+  .laptop-img {
+    height: 230px;
+    width: 70%;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .box-heading {
+    font-size: 2rem;
+  }
+
+  .leadership {
+    margin-bottom: 10px;
+    border-top-left-radius: 85px;
+    height: 55vh;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: 4px solid lightgrey;
+  }
+
+  .contactus {
+    background-color: hsla(0, 3%, 11%, 0.996);
+  }
+
+
+  .form-control {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #2c2c2cfe;
+    border: none;
+    color: white;
+  }
+
+  .form-control:hover {
+    background-color: #2c2c2cfe;
+    color: white;
+  }
+
+  .form-control::placeholder {
+    color: white;
+
+  }
+
+  .name1 {
+    width: 50%;
+
+  }
+
+  .name2 {
+    margin-right: 1%;
+  }
+
+  .name3 {
+    margin-left: 1%;
+  }
+
+
+  .footer-part {
+    background-color: hsla(0, 3%, 11%, 0.996);
+    color: white;
+    padding: 2px 0px;
+    padding-top: 15px;
+
+  }
+  
+  @media(max-width:420px) {
+    .first-heading {
+      width: 100% !important;
+      font-size: 1.5rem;
+    }
+
+    .pic-1 {
+      height: 55vh;
+    }
+
+    .card-content {
+      width: 80%;
+      top: 25%;
+
+    }
+
+    .btn-2 {
+      margin-top: 10px;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .our-features-text {
+      font-size: 20vh;
+    }
+
+    .zero-card {
+      width: 38%;
+    }
+
+    .heading-text {
+      font-size: 2rem;
+    }
+
+    .form-control {
+      width: 100%;
+    }
+
+    .name1 {
+      flex-direction: column;
+      width: 100% !important;
+    }
+
+  }
+  @media (min-width: 280px) and (max-width: 380px){
+    .our-features-text{
+      font-size: 5vh;
+    }
+    .zero-1{
+      display: none;
+    }
+    .zero-content{
+      width: 100%;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 768px){
+    .card{
+      width: 70%;
+    }
+    .zero-1{
+      width: 124px !important;
+      border: 2px solid white;
+      padding: 29px;
+      margin: 0px;
+      border-top-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+    }
+
+  }
+  @media (min-width:769px) and (max-width:830px){
+    .first-heading {
+      font-size: 5vh;
+    }
+
+    .our-features-text {
+      font-size: 3vh;
+    }
+    .card{
+      width: 60%;
+    }
+    .leadership{
+      height: 25vh;
+      width: 100%;
+    }
+    .zero-1{
+     
+      display: none;
+    }
+    
+  .zero-content{
+    width: 100%;
+    
+  }
+}
+  </style>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <i class="fa-solid fa-database fa-2xl" style="color: black;"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: center;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="topnav-right">
+        <button class="get-Started-btn">GET <br> STARTED</button>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <div class="mb-5">
+      <!-- heading part -->
+      <div class="row first-heading">
+        <p><span class="bold-heading">WEB </span> DEVELOPMENT</p>
+        <P><span class="bold-heading">STUDIO </span>FOR</P>
+        <P><span class="bold-heading">YOUR </span>BUSSINESS</P>
+      </div>
+      <!-- image part -->
+      <div class="bg-text-img">
+        <div class="card card-content">
+          <div class="card-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim eaque tempora, harum quis quisquam optio.
+            </p>
+          </div>
+          <div class="btn-wrap">
+            <button type="button" class="btn btn-dark ">GET STARTED</button>
+            <button type="button" class="btn btn-outline-dark btn-2">READ MORE</button>
+          </div>
+        </div>
+      </div>
+      <!-- OUR Features-->
+      <div class="row mt-5">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <p class="our-features-text">OUR FEATURES</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+          <img src="./Images/img-4.jpg" alt="" class="leadership img-fluid">
+          <h5>Dylan Sprouse</h5>
+          <p style="color: #7e7a7a;">DESIGNER</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+          <img src="./Images/img-6.jpg" alt="" class="leadership  img-fluid">
+          <h5>Marsha cyr</h5>
+          <p style="color: #7e7a7a;">DEVELOPER</p>
+
+        </div>
+      </div>
+      
+      <!-- tools part -->
+      <div class="row mb-5 pt-5 pb-5" style="background-color: #2c2c2cfe;color: white;">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tools">
+        <span style="font-size: 4vh;">TOOLS TO</span> <span style="font-weight:
+         bold;font-size: 4vh;">BUILD <br> YOUR</span>
+        <span style="font-size: 4vh;">BUSINESS</span>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="row">
+        <div class="col-3">
+           <p class="zero-1"><span class="zero-2">0</span></p>
+        </div>
+        <div class="col-9 zero-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, odio.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur
+           magnam maiores asperiores voluptate a laborum. Atque ullam hic doloremque!
+           Lorem ipsum dolor sit amet.lorem7 Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </div>
+      </div>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Laudantium voluptate commodi, qui architecto neque aperiam iure quas? Aliquid, iure nemo.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt similique voluptates
+        dolorum dolores iure eveniet placeat eius ab ipsa nisi.
+      </div>
+    </div>
+
+      <!-- WEB DEVELOPMENT PART -->
+      <div class="row mt-5 text-center">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col">
+          <P class="heading-text row 0">Web Development</P>
+          <img src="./Images/laptop-1.jpg" alt="" class="laptop-img ">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <P class="heading-text">01</P>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+          <p style="font-size: small;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sed
+            natus ducimus maxime voluptatum vero
+            alias ratione. Dolorum, blanditiis quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum facilis!
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum</p>
+          <button type="button" class="btn btn-dark">READ MORE</button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <P class="heading-text para" style="order: order-sm-3;">02</P>
+          <h5 class=" para para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+          <p class="para" style="font-size: small;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sed
+            natus ducimus maxime voluptatum vero
+            alias ratione. Dolorum, blanditiis quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum facilis!
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum</p>
+          <button type="button" class="btn btn-dark ">READ MORE</button>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <P class="heading-text" style="order: order-sm-0;">Seo/ Marketing</P>
+          <img src="./Images/laptop-1.jpg" alt="" class="laptop-img">
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <P class="heading-text">Web Design</P>
+          <img src="./Images/laptop-1.jpg" alt="" class="laptop-img">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <P class="heading-text para">03</P>
+          <h5 class=" para para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+          <p class="para" style="font-size: small;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sed
+            natus ducimus maxime voluptatum vero
+            alias ratione. Dolorum, blanditiis quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum facilis!
+            nostrum, cum modi incidunt quidem maxime officia odio possimus rerum</p>
+          <button type="button" class="btn btn-dark ">READ MORE</button>
+        </div>
+      </div>
+
+      <!-- box-part -->
+
+      <div class="row mt-5 pt-4 pb-4 mb-5" style="background-color:hsla(0, 3%, 11%, 0.996);color: white;">
+        <!-- Design part -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <p class="box-heading">DESIGN</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde. Enim quis expedita aperiam
+            inventore.</p>
+        </div>
+        <hr>
+        <!-- Development part -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="box-heading">DEVELOPMENT</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde. Enim quis expedita aperiam
+            inventore.</p>
+        </div>
+        <hr>
+        <!-- Support part -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="box-heading">SUPPORT</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde. Enim quis expedita aperiam
+            inventore.</p>
+        </div>
+        <hr>
+        <!-- Analitics part -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="box-heading">ANALITICS</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde. Enim quis expedita aperiam
+            inventore.</p>
+        </div>
+        <hr>
+        <!-- Help part -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="box-heading">HELP</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde. Enim quis expedita aperiam
+            inventore.</p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Leadership part -->
+      <h1 style="font-weight: 700;font: size 3rem;" class="mb-4">Leadership</h1>
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-6 col-xl-3 text-center">
+          <img src="./Images/img-1.jpeg" alt="" class="leadership img-fluid">
+          <h5>Marsha cyr</h5>
+          <p style="color: #7e7a7a;">DEVELOPER</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-6 col-xl-3 text-center">
+          <img src="./Images/img-5.jpg" alt="" class="leadership img-fluid">
+          <h5>Barbara Palvin</h5>
+          <p style="color: #7e7a7a;">DEVELOPER</p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+          <img src="./Images/img-4.jpg" alt="" class="leadership img-fluid">
+          <h5>Dylan Sprouse</h5>
+          <p style="color: #7e7a7a;">DESIGNER</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col=xl-3 text-center">
+          <img src="./Images/img-6.jpg" alt="" class="leadership img-fluid">
+          <h5>Daryal Rowe</h5>
+          <p style="color: #7e7a7a;">MANAGER</p>
+        </div>
+
+      </div>
+
+      <!-- Contact us part  -->
+      <div class="contactus mt-4">
+        <h1 class="mb-5 text-center pt-5" style="color: white;">CONTACT US</h1>
+        <form>
+          <div class="d-flex  name1" style="margin: 0 auto;padding-right: 10px;">
+            <input type="text" class="form-control mb-3 name2" placeholder="Name">
+            <input type="email" class="form-control mb-3 name3" placeholder="Email">
+          </div>
+          <input type="phone" class="form-control mb-3" placeholder="Phone">
+          <textarea name="" class="mb-3 form-control" cols="30" rows="10" placeholder="Message"></textarea>
+          <div class="text-center">
+            <button type="button" class="btn btn-outline-light mb-5">SEND MESSAGE</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Discover part -->
+
+      <div class="row mt-5">
+        <div class="col">
+          <li>DISCOVER </li>
+          <p class="mt-3">About Careers blog</p>
+        </div>
+
+        <div class="col">
+          <li>LEGAL</li>
+          <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="col">
+          <li>RESOURCES </li>
+          <p class="mt-3">About Lorem, ipsum dolor.</p>
+        </div>
+
+        <div class="col">
+          <li>COMMUNITY </li>
+          <p class="mt-3">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="col">
+          <li>CONTACT </li>
+          <p class="mt-3">Contact support talk to sales -7997669643
+            spring street
+          </p>
+        </div>
+
+      </div>
+
+      <!-- footer part -->
+      <footer class="footer-part text-center">
+        <p> <span>&copy; </span>Copyright 2022 Mobirsise -All rights Reserved</p>
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
